@@ -8,6 +8,7 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/so
 	echo "deb http://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list && \
 	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823 && \
 	apt-get update -y && \
+	apt-get install -y --no-install-recommends fakeroot && \
 	apt-get install -y --no-install-recommends openjdk-8-jdk && \
 	apt-get install -y --no-install-recommends sbt && \
 	sbt exit && \
