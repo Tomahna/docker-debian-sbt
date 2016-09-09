@@ -10,6 +10,7 @@ RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/so
 	apt-get update -y && \
 	apt-get install -y --no-install-recommends openjdk-8-jdk && \
 	apt-get install -y --no-install-recommends sbt && \
+	sbt exit && \
 	apt-get clean -y && \
 	rm -rf /var/lib/apt/lists/*
 	
