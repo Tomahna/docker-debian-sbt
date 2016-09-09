@@ -1,5 +1,5 @@
 #
-# Debian + OpenJDK8 + SBT + RubyGem for packagecloud.io deployment
+# Debian + OpenJDK8 + SBT
 #
 FROM debian:jessie
 MAINTAINER Kévin Rauscher <kevin.rauscher@tomahna.fr>
