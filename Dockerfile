@@ -4,10 +4,6 @@
 FROM debian:jessie
 MAINTAINER Kévin Rauscher <kevin.rauscher@tomahna.fr>
 
-ENV LC_ALL=C.UTF-8
-ENV LANG=C.UTF-8
-ENV LANGUAGE=C.UTF-8 
-
 RUN echo "deb http://ftp.debian.org/debian jessie-backports main" >> /etc/apt/sources.list.d/backports.list && \
 	echo "deb http://dl.bintray.com/sbt/debian /" | tee -a /etc/apt/sources.list.d/sbt.list && \
 	apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 642AC823 && \
